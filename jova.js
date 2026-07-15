@@ -48,10 +48,10 @@ revealEls.forEach(el => io.observe(el));
 
 // Stat count-up
 const statTargets = {
-    0: 240,
+    0: 100,
     1: 12000,
     2: 3,
-    3: 2
+    3: 1,
 };
 const statEls = document.querySelectorAll('.stat-number');
 const statIO = new IntersectionObserver((entries) => {
@@ -59,7 +59,7 @@ const statIO = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             const el = entry.target;
             const idx = Array.from(statEls).indexOf(el);
-            const target = statTargets[idx] ? 0 : statTargets[idx];
+            const target = statTargets[idx] || 0;
             const duration = 1400;
             const start = performance.now();
 
