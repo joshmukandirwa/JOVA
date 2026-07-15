@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <meta name="description" content="JOVA est une entreprise technologique née à Goma qui conçoit des outils numériques pensés pour rapprocher les personnes. Découvrez Masolo et l'écosystème JOVA.">
+    <link rel="icon" href="./icons/jovalogo1.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="progress"></div>
+    <div class="ambient"></div>
+    <div class="noise"></div>
+    <div id="cursor-glow"></div>
+
+    <header>
+        <div class="container nav-row">
+            <a href="#accueil" class="brand load-in d1">
+                <img src="./icons/jovalogo1.png" alt="Logo JOVA"> JOVA
+            </a>
+            <nav class="links load-in d2">
+                <a href="#accueil">Accueil</a>
+                <a href="#produits">Produits</a>
+                <a href="#technologie">Technologie</a>
+                <a href="#valeurs">Valeurs</a>
+                <a href="#apropos">À propos</a>
+                <a href="jova-ai.html">AI</a>
+            </nav>
+            <div class="nav-right load-in d3">
+                <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
+                        <circle cx="12" cy="12" r="4" />
+                        <path
+                            d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+                <a href="#produits" class="nav-cta magnetic">Découvrir Masolo</a>
+                <button class="menu-toggle" aria-label="Ouvrir le menu" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="accueil">
+            <div class="orbit-wrap" id="orbitWrap">
+                <div class="ring r1"></div>
+                <div class="ring r2"></div>
+            </div>
+            <img class="jova2" src="./icons/jovalogo1.png" alt="logo JOVA">
+            <div>
+                <span class="hero-eyebrow load-in d2">Entreprise technologique · Goma, RDC</span>
+                <h1 class="load-in d3">JOVA</h1>
+                <p class="hero-tagline load-in d4">Imaginer. Construire. Connecter.</p>
+                <p class="hero-sub load-in d5">Nous créons les outils numériques qui rapprochent les personnes — des plateformes de communication aux solutions pensées pour simplifier le quotidien.</p>
+                <div class="hero-actions load-in d6">
+                    <a href="#produits" class="btn btn-primary magnetic">Découvrir nos produits</a>
+                    <a href="#apropos" class="btn btn-ghost magnetic">En savoir plus</a>
+                </div>
+            </div>
+            <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
+        </section>
+
+        <div class="marquee-band">
+            <div class="marquee-track">
+                <span>Simplicité</span><span>Confiance</span><span>Modernité</span><span>Connexion</span><span>Masolo</span><span>Innovation</span>
+                <span>Simplicité</span><span>Confiance</span><span>Modernité</span><span>Connexion</span><span>Masolo</span><span>Innovation</span>
+            </div>
+        </div>
+
+        <section id="produits">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Produits</span>
+                    <h2>Un écosystème, plusieurs façons de connecter.</h2>
+                    <p>Chaque produit JOVA répond à un besoin réel — construit avec la même exigence de simplicité et de fiabilité.
+                    </p>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card reveal spotlight" style="--card-glow:rgba(53,198,244,0.22)">
+                        <span class="product-status status-dev">En développement</span>
+                        <div class="product-icon">
+                            <img src="./icons/masolo-logo.png" alt="logo masolo">
+                        </div>
+                        <h3>Masolo</h3>
+                        <p>Une application de messagerie moderne pour échanger, partager et rester connecté en temps réel, où que vous soyez.</p>
+                        <span class="product-link">Bientôt disponible
+                            <!-- <span class="product-link">Découvrir Masolo -->
+                            <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg> -->
+                        </span>
+                    </div>
+
+                    <a href="jova-ai.html" class="product-card reveal spotlight" style="--card-glow:rgba(123,77,255,0.22)">
+                        <span class="product-status status-live">En ligne</span>
+                        <div class="product-icon">🤖</div>
+                        <h3>JOVA AI</h3>
+                        <p>Une intelligence artificielle intégrée aux services JOVA, pensée pour accompagner et faciliter chaque interaction.
+                        </p>
+                        <span class="product-link">Discuter avec JOVA AI
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M13 6l6 6-6 6" />
+                            </svg>
+                        </span>
+                    </a>
+
+                    <div class="product-card reveal spotlight" style="--card-glow:rgba(47,107,255,0.22)">
+                        <span class="product-status status-dev">En développement</span>
+                        <div class="product-icon">🌐</div>
+                        <h3>JOVA Web Services</h3>
+                        <p>Des solutions web et numériques sur mesure, pour les entreprises et les créateurs qui veulent exister en ligne.
+                        </p>
+                        <span class="product-link">Bientôt disponible
+                            <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg> -->
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="technologie" class="tech-section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Technologie</span>
+                    <h2>Construit pour durer, pensé pour aller vite.</h2>
+                    <p>Une base technique solide, taillée pour la fiabilité et la vitesse — sans jamais complexifier l'expérience.
+                    </p>
+                </div>
+                <div class="tech-grid reveal">
+                    <div class="tech-item">
+                        <span class="n">01</span>
+                        <h4>Temps réel</h4>
+                        <p>Des échanges instantanés, synchronisés sur tous les appareils.</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="n">02</span>
+                        <h4>Sécurité</h4>
+                        <p>Authentification robuste et données protégées à chaque étape.</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="n">03</span>
+                        <h4>Accessibilité</h4>
+                        <p>Des produits légers, pensés pour fonctionner partout, même en connexion limitée.</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="n">04</span>
+                        <h4>Évolutivité</h4>
+                        <p>Une architecture conçue pour grandir avec chaque nouveau produit JOVA.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="valeurs">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Valeurs</span>
+                    <h2>Ce qui guide chaque produit que nous construisons.</h2>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card reveal">
+                        <div class="value-mark"></div>
+                        <h4>Simplicité</h4>
+                        <p>Une bonne technologie ne se remarque pas — elle se laisse utiliser. Nous enlevons ce qui n'est pas nécessaire.
+                        </p>
+                    </div>
+                    <div class="value-card reveal">
+                        <div class="value-mark"></div>
+                        <h4>Confiance</h4>
+                        <p>Vos échanges, vos données, votre temps : nous les traitons avec le sérieux qu'ils méritent, sans compromis.
+                        </p>
+                    </div>
+                    <div class="value-card reveal">
+                        <div class="value-mark"></div>
+                        <h4>Proximité</h4>
+                        <p>Nés à Goma, nous construisons pour un usage réel — des connexions limitées aux besoins concrets de nos utilisateurs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="apropos">
+            <div class="container about">
+                <div class="about-visual reveal">
+                    <div class="ring-static"></div>
+                    <div class="ring-static"></div>
+                    <div class="ring-static"></div>
+                    <div class="about-logo">
+                        <img src="icons/jovalogo1.png">
+                    </div>
+                </div>
+                <div class="about-copy reveal">
+                    <span class="eyebrow">À propos</span>
+                    <h2>La technologie doit être simple, utile et humaine.</h2>
+                    <p>Chez <strong>JOVA</strong>, nous développons des produits qui rapprochent les personnes et créent de nouvelles façons de communiquer.</p>
+                    <p>Notre mission est de concevoir des expériences simples, rapides et accessibles à tous — des plateformes de communication aux solutions innovantes qui accompagnent le futur.</p>
+                    <p>JOVA n'est pas seulement le créateur de <strong>Masolo</strong>. C'est une entreprise technologique en construction, avec l'ambition de bâtir tout un écosystème de produits numériques.
+                    </p>
+                    <div class="pull-quote">
+                        <p>« On construit JOVA comme on aimerait qu'on nous construise un outil : simple, honnête, et pensé pour de vraies personnes. »</p>
+                        <span>— L'équipe JOVA, Goma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats" class="stats-section">
+            <div class="container">
+                <div class="section-head reveal" style="margin-left:auto;margin-right:auto;">
+                    <span class="eyebrow">En chiffres</span>
+                    <h2>Une croissance qui commence.</h2>
+                </div>
+                <div class="stats-grid reveal">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="0">0</div>
+                        <div class="stat-label">Utilisateurs actifs</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="0">0</div>
+                        <div class="stat-label">Messages échangés</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="1">0</div>
+                        <div class="stat-label">Projets développés</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="1">0</div>
+                        <div class="stat-label">Pays couverts</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-band">
+            <div class="container reveal">
+                <h2>Construisons la suite ensemble.</h2>
+                <p>Masolo n'est que le premier pas. Suivez l'évolution de JOVA et de son écosystème de produits.</p>
+                <div class="hero-actions1" style="text-align: center;">
+                    <a href="#produits" class="btn btn-primary magnetic">Essayer Masolo</a>
+                    <a href="#assistance" class="btn btn-ghost magnetic">Nous contacter</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="assistance">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#accueil" class="brand">
+                        <img src="./icons/jovalogo1.png" alt="logo JOVA"> JOVA
+                    </a>
+                    <p>Créer les outils numériques qui rapprochent les personnes.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Produits</h5>
+                    <a href="#produits">Masolo</a>
+                    <a href="jova-ai.html">JOVA AI</a>
+                    <a href="#produits">JOVA Web Services</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Entreprise</h5>
+                    <a href="#apropos">À propos</a>
+                    <a href="#valeurs">Valeurs</a>
+                    <a href="#">Carrières</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Ressources</h5>
+                    <a href="#technologie">Technologie</a>
+                    <a href="#stats">Statistiques</a>
+                    <a href="#">Actualités</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Contact</h5>
+                    <a href="mailto:contact@jova.tech">jovatech@gmail.com</a>
+                    <a href="https://wa.me/987654321">WhatsApp</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 JOVA | Tous droits réservés</span>
+                <span>Goma, RDC</span>
+            </div>
+        </div>
+    </footer>
+    <script src="jova.js"></script>
+
+</body>
+
+</html>
